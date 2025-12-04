@@ -1,51 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Church Payments</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Church Offering</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Give your offering</h1>
-    <p>Send your offering via M-Pesa Paybill using the steps below.</p>
+    <h1>Church Offering</h1>
+    <p>Give your offering easily via M-Pesa</p>
   </header>
 
   <section>
-    <h2>How to pay via M-Pesa Paybill</h2>
+    <h2>Paybill Instructions</h2>
     <ol>
-      <li><strong>Open M-Pesa:</strong> Go to the M-Pesa menu on your phone.</li>
-      <li><strong>Select Lipa na M-Pesa:</strong> Choose the Paybill option.</li>
-      <li><strong>Enter Paybill Number:</strong> 836337</li>
-      <li><strong>Enter Account:</strong> Church Offering, tithe, project</li>
-      <li><strong>Enter Amount:</strong> Confirm to complete.</li>
+      <li>Open the M-Pesa app on your phone</li>
+      <li>Select <strong>Lipa na M-Pesa</strong></li>
+      <li>Choose <strong>Paybill</strong></li>
+      <li>Enter Paybill: <strong>836337</strong></li>
+      <li>Enter Account: <strong>Church Offering</strong></li>
+      <li>Enter Amount and confirm</li>
     </ol>
   </section>
 
-  <section>
-    <h2>Open the M-Pesa app</h2>
-    <p>Tap the M-Pesa button below to open the app or install it if needed.</p>
-
-    <!-- Primary call-to-action -->
-    <a href="#" class="mpesa-button" onclick="openMpesa()" aria-label="Open M-Pesa app">
-      <img src="mpesa-logo.png" alt="M-Pesa logo" />
-      Open M-Pesa
-    </a>
-
-    <!-- Optional explicit App Store link as a visible fallback for iPhone users -->
-    <div style="margin-top:12px;">
-      <a href="https://apps.apple.com/ke/app/m-pesa/id1581016672" target="_blank" rel="noopener">
-        Open on iPhone (App Store)
-      </a>
-    </div>
-  </section>
+  <!-- M-Pesa Button -->
+  <a href="#" class="mpesa-button" onclick="openMpesa()">
+    <img src="mpesa-logo.png" alt="M-Pesa logo" />
+    Open M-Pesa or Install
+  </a>
 
   <footer>
-    <p>Thank you for giving.</p>
+    <p>Thank you for your giving. God bless you</p>
   </footer>
 
-  <!-- Load redirect logic -->
   <script src="script.js"></script>
 </body>
 </html>
