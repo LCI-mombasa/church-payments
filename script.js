@@ -6,17 +6,14 @@ function openMpesa() {
 
   // Then provide fallback links
   if (/android/i.test(userAgent)) {
-    // Android users → Play Store
     setTimeout(function() {
       window.location = "https://play.google.com/store/apps/details?id=com.safaricom.mpesa";
     }, 2000);
   } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-    // iPhone users → App Store
     setTimeout(function() {
       window.location = "https://apps.apple.com/ke/app/m-pesa/id1581016672";
     }, 2000);
   } else {
-    // Desktop users
     console.log("Please use your phone to open M-Pesa.");
   }
 }
