@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Church Payments</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
@@ -15,34 +15,37 @@
   <section>
     <h2>How to pay via M-Pesa Paybill</h2>
     <ol>
-      <li>Open the M-Pesa menu on your phone.</li>
-      <li>Select <strong>Lipa na M-Pesa</strong>.</li>
-      <li>Choose <strong>Paybill</strong>.</li>
-      <li>Enter Paybill Number: <strong>836337</strong></li>
-      <li>Enter Account Name: <strong>Church Offering,tithe,project</strong></li>
-      <li>Enter Amount and confirm.</li>
+      <li><strong>Open M-Pesa:</strong> Go to the M-Pesa menu on your phone.</li>
+      <li><strong>Select Lipa na M-Pesa:</strong> Choose the Paybill option.</li>
+      <li><strong>Enter Paybill Number:</strong> 836337</li>
+      <li><strong>Enter Account:</strong> Church Offering, tithe, project</li>
+      <li><strong>Enter Amount:</strong> Confirm to complete.</li>
     </ol>
   </section>
 
   <section>
     <h2>Open the M-Pesa app</h2>
-    <p>Tap the M-Pesa logo to go to the app page on your phone.</p>
+    <p>Tap the M-Pesa button below to open the app or install it if needed.</p>
 
-    <!-- Clickable M-Pesa logo with smart link -->
-    <a href="intent://mpesa/#Intent;scheme=mpesa;package=com.safaricom.mpesabanking;end">
-      <img src="mpesa-logo.png" alt="Open M-Pesa app" width="200">
+    <!-- Primary call-to-action -->
+    <a href="#" class="mpesa-button" onclick="openMpesa()" aria-label="Open M-Pesa app">
+      <img src="mpesa-logo.png" alt="M-Pesa logo" />
+      Open M-Pesa
     </a>
 
-    <!-- Optional iPhone App Store link -->
+    <!-- Optional explicit App Store link as a visible fallback for iPhone users -->
     <div style="margin-top:12px;">
       <a href="https://apps.apple.com/ke/app/m-pesa/id1581016672" target="_blank" rel="noopener">
         Open on iPhone (App Store)
-    </a>
+      </a>
+    </div>
   </section>
 
   <footer>
     <p>Thank you for giving.</p>
   </footer>
-</body>
 
-</html> 
+  <!-- Load redirect logic -->
+  <script src="script.js"></script>
+</body>
+</html>
